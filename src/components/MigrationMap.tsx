@@ -102,6 +102,68 @@ export default function MigrationMap({
           </filter>
         </defs>
 
+        <g opacity="0.3">
+          <path d="M 10,20 L 15,22 L 20,25 L 25,28 L 28,32 L 30,40 L 28,48 L 25,52 L 22,55 L 18,58 L 12,60 L 10,58 L 8,52 L 7,45 L 8,38 L 9,32 L 10,28 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 15,60 L 18,62 L 22,65 L 25,70 L 28,75 L 30,82 L 28,88 L 25,90 L 20,88 L 15,85 L 12,80 L 11,72 L 12,65 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 20,15 L 25,12 L 30,10 L 35,12 L 38,18 L 38,25 L 35,30 L 30,32 L 25,30 L 22,25 L 20,20 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 45,25 L 48,26 L 50,28 L 52,31 L 51,35 L 49,38 L 46,39 L 43,37 L 42,33 L 43,29 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 48,28 L 51,29 L 54,30 L 57,29 L 59,26 L 58,23 L 55,22 L 52,23 L 50,26 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 47,32 L 50,33 L 53,36 L 54,40 L 52,43 L 48,44 L 45,42 L 44,38 L 45,35 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 46,36 L 48,37 L 50,40 L 49,43 L 46,44 L 43,42 L 43,39 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 51,35 L 54,36 L 57,39 L 58,42 L 56,45 L 53,46 L 50,44 L 49,40 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 53,28 L 57,29 L 60,31 L 62,35 L 61,40 L 58,42 L 54,41 L 52,37 L 52,32 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 56,35 L 60,36 L 64,39 L 66,43 L 65,48 L 62,51 L 58,52 L 55,50 L 54,45 L 55,40 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 60,42 L 64,43 L 68,45 L 70,49 L 68,53 L 64,54 L 60,52 L 58,48 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 64,38 L 70,40 L 75,43 L 78,48 L 78,54 L 75,58 L 70,60 L 65,58 L 62,53 L 62,47 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 72,28 L 78,30 L 82,33 L 85,38 L 84,43 L 80,46 L 75,45 L 71,42 L 70,37 L 71,32 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 80,32 L 85,33 L 88,36 L 89,41 L 87,45 L 83,46 L 79,44 L 78,39 L 79,35 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 78,60 L 84,62 L 88,65 L 90,70 L 88,76 L 84,80 L 78,82 L 72,80 L 70,75 L 71,68 L 75,63 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 28,55 L 33,58 L 37,62 L 39,68 L 38,75 L 35,80 L 30,82 L 25,79 L 23,73 L 24,65 L 26,60 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 26,68 L 30,70 L 34,75 L 35,82 L 33,88 L 28,90 L 23,87 L 21,81 L 22,75 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 52,68 L 57,70 L 60,75 L 59,80 L 56,83 L 51,82 L 48,78 L 48,73 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 52,45 L 56,46 L 59,49 L 60,54 L 58,58 L 54,59 L 50,57 L 49,52 L 50,48 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+          
+          <path d="M 47,48 L 51,50 L 54,54 L 54,59 L 51,62 L 47,63 L 43,60 L 42,55 L 44,51 Z" 
+                fill="none" stroke="hsl(var(--border))" strokeWidth="0.15" />
+        </g>
+
         {flows.map((flow, index) => {
           const midX = (flow.from.x + flow.to.x) / 2;
           const midY = (flow.from.y + flow.to.y) / 2 - 8;
