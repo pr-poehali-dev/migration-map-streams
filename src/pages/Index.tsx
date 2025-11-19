@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import MigrationMap from '@/components/MigrationMap';
+import MigrationChart from '@/components/MigrationChart';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
@@ -296,6 +297,9 @@ export default function Index() {
 
         <section id="analytics" className="space-y-4">
           <h2 className="text-3xl font-bold tracking-tight">Аналитика</h2>
+          
+          <MigrationChart />
+          
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <Card className="p-6">
               <h3 className="font-semibold mb-4">Топ направлений миграции</h3>
