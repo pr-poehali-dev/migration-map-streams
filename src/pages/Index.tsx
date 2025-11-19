@@ -140,8 +140,11 @@ export default function Index() {
           </div>
         </section>
 
-        <section id="stats" className="space-y-4">
-          <h2 className="text-3xl font-bold tracking-tight">Ключевые показатели</h2>
+        <section id="stats" className="space-y-6">
+          <div>
+            <h2 className="text-3xl font-bold tracking-tight mb-2">Статистика миграции 2024</h2>
+            <p className="text-muted-foreground">Данные ООН и Всемирного банка по состоянию на ноябрь 2024 года</p>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <Card className="p-6">
               <div className="flex items-center gap-4">
@@ -150,10 +153,10 @@ export default function Index() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Всего мигрантов</p>
-                  <p className="text-2xl font-bold font-mono">281M</p>
+                  <p className="text-2xl font-bold font-mono">281.5M</p>
                   <Badge variant="outline" className="mt-1">
                     <Icon name="TrendingUp" size={12} className="mr-1" />
-                    +3.2%
+                    +3.6% с 2023
                   </Badge>
                 </div>
               </div>
@@ -165,11 +168,11 @@ export default function Index() {
                   <Icon name="ArrowRightLeft" className="text-accent" size={24} />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground">Активных потоков</p>
-                  <p className="text-2xl font-bold font-mono">1,247</p>
+                  <p className="text-sm text-muted-foreground">Беженцы и просители убежища</p>
+                  <p className="text-2xl font-bold font-mono">43.4M</p>
                   <Badge variant="outline" className="mt-1">
-                    <Icon name="Activity" size={12} className="mr-1" />
-                    Онлайн
+                    <Icon name="AlertTriangle" size={12} className="mr-1" />
+                    +12% с 2023
                   </Badge>
                 </div>
               </div>
@@ -181,11 +184,11 @@ export default function Index() {
                   <Icon name="Globe2" className="text-secondary" size={24} />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground">Стран-участниц</p>
-                  <p className="text-2xl font-bold font-mono">195</p>
+                  <p className="text-sm text-muted-foreground">Трудовые мигранты</p>
+                  <p className="text-2xl font-bold font-mono">169M</p>
                   <Badge variant="outline" className="mt-1">
-                    <Icon name="MapPin" size={12} className="mr-1" />
-                    Глобально
+                    <Icon name="Briefcase" size={12} className="mr-1" />
+                    60% от общего числа
                   </Badge>
                 </div>
               </div>
@@ -197,12 +200,94 @@ export default function Index() {
                   <Icon name="TrendingUp" className="text-primary" size={24} />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground">Рост за год</p>
-                  <p className="text-2xl font-bold font-mono">+8.9M</p>
+                  <p className="text-sm text-muted-foreground">Денежные переводы</p>
+                  <p className="text-2xl font-bold font-mono">$656B</p>
                   <Badge variant="outline" className="mt-1">
-                    <Icon name="Calendar" size={12} className="mr-1" />
-                    2024
+                    <Icon name="DollarSign" size={12} className="mr-1" />
+                    Мировой объем
                   </Badge>
+                </div>
+              </div>
+            </Card>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <Card className="p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Icon name="Users" className="text-primary" size={20} />
+                <h3 className="font-semibold">Демография мигрантов</h3>
+              </div>
+              <div className="space-y-3">
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-muted-foreground">Мужчины</span>
+                  <span className="font-mono font-semibold">52%</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-muted-foreground">Женщины</span>
+                  <span className="font-mono font-semibold">48%</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-muted-foreground">Средний возраст</span>
+                  <span className="font-mono font-semibold">39 лет</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-muted-foreground">Дети до 18 лет</span>
+                  <span className="font-mono font-semibold">14%</span>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Icon name="MapPin" className="text-accent" size={20} />
+                <h3 className="font-semibold">Основные коридоры 2024</h3>
+              </div>
+              <div className="space-y-3">
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-muted-foreground">Мексика → США</span>
+                  <span className="font-mono font-semibold">11.2M</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-muted-foreground">Сирия → Турция</span>
+                  <span className="font-mono font-semibold">3.6M</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-muted-foreground">Индия → ОАЭ</span>
+                  <span className="font-mono font-semibold">3.5M</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-muted-foreground">Украина → Польша</span>
+                  <span className="font-mono font-semibold">2.9M</span>
+                </div>
+              </div>
+            </Card>
+
+            <Card className="p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Icon name="TrendingUp" className="text-secondary" size={20} />
+                <h3 className="font-semibold">Тренды 2024</h3>
+              </div>
+              <div className="space-y-3">
+                <div className="flex items-start gap-2">
+                  <Icon name="ArrowUp" className="text-green-500 mt-0.5" size={16} />
+                  <div className="flex-1">
+                    <p className="text-sm">Климатическая миграция</p>
+                    <p className="text-xs text-muted-foreground">+18% (21.5M человек)</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Icon name="ArrowUp" className="text-green-500 mt-0.5" size={16} />
+                  <div className="flex-1">
+                    <p className="text-sm">Цифровые кочевники</p>
+                    <p className="text-xs text-muted-foreground">+35% (40M человек)</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Icon name="Minus" className="text-yellow-500 mt-0.5" size={16} />
+                  <div className="flex-1">
+                    <p className="text-sm">Студенческая миграция</p>
+                    <p className="text-xs text-muted-foreground">Стабильно (6.1M)</p>
+                  </div>
                 </div>
               </div>
             </Card>
